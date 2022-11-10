@@ -1,0 +1,172 @@
+.logos{
+    height: 100px;
+    padding: 10px;
+}
+.logos img{
+    height: 64px;
+    padding-right: 20px;
+}
+.ucolXL{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .ucolXL{
+        display: contents;
+    }
+    .ucolMD{
+        display: none;
+    }
+    .floatBar{
+        right: 0%;
+    }
+}
+.navbar{
+    padding: 0 !important;
+}
+.nav-link{
+    font-size: 15px;
+    margin: 0px 10px 0px 10px !important;
+    padding: 10px 50px 10px 50px !important;
+    border-bottom: #06d6a0 0px solid;
+    color: #0aad81 !important;
+    transition: border-bottom .2s;
+}
+.disabled{
+    border-bottom: #06d6a0 4px solid;
+    color: #06d6a0 !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    border-bottom: #06d6a0 4px solid;
+    font-weight: bold;
+    color: #06d6a0 !important;
+}
+.btnLeft{
+    left: 2%;
+    bottom: 40%;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    border-radius: 5px;
+    background-color: #343a403e;
+    transition: background .1s;
+}
+.btnLeft:hover{
+    background-color: #343a40;
+    cursor: pointer
+}
+.btnRight{
+    right: 2%;
+    bottom: 40%;
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    border-radius: 5px;
+    background-color: #343a403e;
+    transition: background .1s;
+}
+.btnRight:hover{
+    background-color: #343a40;
+    cursor: pointer
+}
+.carousel-caption,h5,p {
+    color: black;
+}
+/* <------------Search-Bar------------> */
+.floatBar{
+    position: absolute;
+    right: 15%;
+    top: 100px;
+}
+@media (max-width: 1200px) {
+    .floatBar{
+        right: 0%;
+    }
+}
+.searchbar{
+    position:relative;
+    min-width:50px;
+    max-width:325px;
+    width:0%;
+    height:40px;
+    float:right;
+    overflow:hidden;
+    border-radius: 5px;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-box-shadow: -10px 0px 4px -5px rgb(255, 255, 255);
+    -moz-box-shadow: -10px 0px 4px -5px rgb(255, 255, 255);
+    box-shadow: -10px 0px 4px -5px rgb(255, 255, 255);
+}
+.searchbar-input{
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: rgb(235, 239, 237);
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 20px;
+    color: #434343;
+}
+.searchbar-input::-webkit-input-placeholder {
+    color: #4e4e4e;
+}
+.searchbar-input:-moz-placeholder {
+    color: #4e4e4e;
+}
+.searchbar-input::-moz-placeholder {
+    color: #4e4e4e;
+}
+.searchbar-input:-ms-input-placeholder {
+    color: #4e4e4e;
+}
+.searchbar-icon,.searchbar-submit{
+    width:50px;
+    height:40px;
+    display:block;
+    position:absolute;
+    top:0;
+    font-family:verdana;
+    font-size:20px;
+    right:0;
+    padding:0;
+    margin:0;
+    border:0;
+    outline:0; 
+    line-height:35px;
+    text-align:center;
+    cursor:pointer;
+    border: #06d6a0 2px solid;
+    color:#06d6a0;
+    background:white ;
+    transition: background .1s;
+}
+.searchbar-icon:hover{
+    background-color: #06d6a0 !important;
+    border: #06d6a0 1px solid !important;
+    color: white;
+}
+.searchbar-icon:focus{
+    background: #06d6a0;
+}
+.searchbar-open{
+    width:100%;
+}
+.floatBar{
+    width: 50px;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
