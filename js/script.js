@@ -50,3 +50,80 @@ var total = space - 1140;
         $('.floatBar').css('right','200')
     }
   });*/
+//|=====================/SCROLL-REVEAL|=====================|
+//-----------------bloque-1-----------------
+window.sr = ScrollReveal();
+sr.reveal('.titleReveal', {
+    duration: 2000,
+    origin: 'top',
+    distance: '-100px',
+    //reset: true
+});
+sr.reveal('.imgReveal', {
+    delay: 700,
+    duration: 2000,
+    origin: 'top',
+    distance: '-100px',
+    //reset: true
+});
+sr.reveal('.textReveal', {
+    delay: 1400,
+    duration: 2000,
+    origin: 'top',
+    distance: '-100px',
+    //reset: true
+});
+//-----------------bloque-2-----------------
+sr.reveal('.textBloque2', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-200px',
+    //reset: true
+});
+sr.reveal('.imgBloque2', {
+    delay: 700,
+    duration: 2000,
+    origin: 'left',
+    distance: '-200px',
+    //reset: true
+});
+//-----------------bloque-3-----------------
+sr.reveal('.textBloque3', {
+    duration: 2000,
+    origin: 'left',
+    distance: '-200px',
+    //reset: true
+});
+sr.reveal('.imgBloque3', {
+    delay: 700,
+    duration: 2000,
+    origin: 'right',
+    distance: '-200px',
+    //reset: true
+});
+//-----------------cards-----------------
+sr.reveal('.titleAllCards', {
+    duration: 2000,
+    //reset: true
+});
+sr.reveal('.card1', {
+    delay: 500,
+    duration: 2000,
+    origin: 'top',
+    distance: '-200px',
+    //reset: true
+});
+sr.reveal('.card2', {
+    delay: 1000,
+    duration: 2000,
+    origin: 'top',
+    distance: '-200px',
+    //reset: true
+});
+sr.reveal('.card3', {
+    delay: 1500,
+    duration: 2000,
+    origin: 'top',
+    distance: '-200px',
+    //reset: true
+});

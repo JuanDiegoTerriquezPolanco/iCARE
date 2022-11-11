@@ -1,3 +1,7 @@
+*{
+    font-family: "Founders Grotesk",Inter,helvetica,arial,sans-serif;
+}
+/* <------------LOGO-BAR------------> */
 .logos{
     height: 100px;
     padding: 10px;
@@ -20,6 +24,7 @@
         right: 0%;
     }
 }
+/* <------------NAVBAR------------> */
 .navbar{
     padding: 0 !important;
 }
@@ -41,42 +46,16 @@
     font-weight: bold;
     color: #06d6a0 !important;
 }
-.btnLeft{
-    left: 2%;
-    bottom: 40%;
-    text-align: center;
-    padding: 2%;
-    position: absolute;
-    color: white;
-    font-size: 400%;
-    border-radius: 5px;
-    background-color: #343a403e;
-    transition: background .1s;
+@media (max-width: 1000px) {
+    .nav-link{
+        width: 100% !important;
+    }
+    .navbar-nav{
+        width: 100% !important;
+        text-align: center;
+    }
 }
-.btnLeft:hover{
-    background-color: #343a40;
-    cursor: pointer
-}
-.btnRight{
-    right: 2%;
-    bottom: 40%;
-    text-align: center;
-    padding: 2%;
-    position: absolute;
-    color: white;
-    font-size: 400%;
-    border-radius: 5px;
-    background-color: #343a403e;
-    transition: background .1s;
-}
-.btnRight:hover{
-    background-color: #343a40;
-    cursor: pointer
-}
-.carousel-caption,h5,p {
-    color: black;
-}
-/* <------------Search-Bar------------> */
+/* <------------SEARCH-BAR------------> */
 .floatBar{
     position: absolute;
     right: 15%;
@@ -169,4 +148,132 @@
     -ms-transition: width 0.3s;
     -o-transition: width 0.3s;
     transition: width 0.3s;
+}
+/* <------------CAROUSEL------------> */
+.btnLeft{
+    left: 0%;
+    bottom: 40%;
+    text-align: center;
+    padding: 3% 1% 3% 1%;
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    border-radius: 5px;
+    background-color: #343a403e;
+    transition: background .1s;
+    display: block;
+}
+.btnLeft:hover{
+    background-color: #343a40;
+    cursor: pointer
+}
+.btnRight{
+    right: 0%;
+    bottom: 40%;
+    text-align: center;
+    padding: 3% 1% 3% 1%;
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    border-radius: 5px;
+    background-color: #343a403e;
+    transition: background .1s;
+    display: block;
+}
+.btnRight:hover{
+    background-color: #343a40;
+    cursor: pointer
+}
+.carousel-caption,h5,p {
+    color: black;
+}
+@media (max-width: 1000px) {
+    .btnRight{
+        display: none !important;
+    }
+    .btnLeft{
+        display: none !important;
+    }
+}
+/* <------------BLOQUE-1------------> */
+.bloque1{
+    margin: 150px 0px 150px 0px;
+    text-align: center;
+}
+.bloque1 h1{
+    font-weight: bold;
+    color: rgb(80, 80, 86);
+    font-size: 65px;
+    margin-bottom: 50px;
+}
+.bloque1 p{
+    color: rgb(80, 80, 86);
+    font-size: 25px;
+    margin-top: 50px;
+}
+/* <------------BLOQUE-2------------> */
+.bloque2{
+    background-color: #F5F5F7;
+}
+.bloque2 img{
+    width: 100%;
+}
+.imgBloque2{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.bloque2 h1{
+    font-weight: bold;
+    color: rgb(80, 80, 86);
+    font-size: 65px;
+    padding: 25% 10% 0% 10%;
+}
+.bloque2 p{
+    color: rgb(80, 80, 86);
+    font-size: 25px;
+    padding: 0% 10% 30% 10%;
+}
+/* <------------BLOQUE-3------------> */
+.bloque3{
+    margin: 0px 0px 150px 0px;
+    background-color: #06d6a0;
+}
+.bloque3 img{
+    width: 100%;
+}
+.imgBloque3{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.bloque3 h1{
+    font-weight: bold;
+    color: white;
+    font-size: 65px;
+    padding: 25% 10% 0% 10%;
+}
+.bloque3 p{
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 25px;
+    padding: 0% 10% 30% 10%;
+}
+/* <------------CARD------------> */
+.bloque4{
+    margin: 0px 0px 200px 0px;
+}
+.card{
+    text-align: left;
+    transition: all .2s;
+}
+.dateCard{
+    margin-left: 20px !important; 
+    color: gray;
+}
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    color: gray;
+}
+.card:hover{
+    transform: scale(1.15);
 }
