@@ -50,6 +50,17 @@ var total = space - 1140;
         $('.floatBar').css('right','200')
     }
   });*/
+//|=====================/SCROLL-NAVBAR|=====================|
+window.addEventListener("scroll", function(){
+    var navBar = document.querySelector(".navbar");
+    var carousel = document.querySelector(".carousel");
+    navBar.classList.toggle("fixed-top", window.scrollY > 100);
+    if (window.scrollY > 100) {
+        carousel.style.marginTop="46px";
+    }else{
+        carousel.style.marginTop="0px";
+    }
+});
 //|=====================/SCROLL-REVEAL|=====================|
 //-----------------bloque-1-----------------
 window.sr = ScrollReveal();
