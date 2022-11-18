@@ -290,3 +290,28 @@
 .card:hover{
     transform: scale(1.15);
 }
+
+
+/* <------------CVC-----------------------------------------------> */
+.bloqueCVC{
+    margin: 0px 0px 150px 0px;
+    background-color: #000000e1;
+}
+.bloqueCVC img{
+    width: 100%;
+}
+.imgBloqueCVC{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.bloqueCVC h1{
+    font-weight: bold;
+    color: white;
+    font-size: 65px;
+    padding: 25% 10% 0% 10%;
+}
+.bloqueCVC p{
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 25px;
+    padding: 0% 10% 30% 10%;
+}
