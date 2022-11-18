@@ -308,10 +308,30 @@
     font-weight: bold;
     color: white;
     font-size: 65px;
-    padding: 25% 10% 0% 10%;
+    padding: 10% 10% 0% 10%;
 }
 .bloqueCVC p{
     color: rgba(255, 255, 255, 0.833);
+    font-size: 25px;
+    padding: 0% 10% 30% 10%;
+}
+/* <---------------------Bloque 1 us---------------------------> */
+
+/* <------------BLOQUE-2------------> */
+.bloque1us{
+    background-color: #F5F5F7;
+}
+.bloque1us img{
+    width: 100%;
+}
+.bloque1us h1{
+    font-weight: bold;
+    color: rgb(239, 71, 111);
+    font-size: 65px;
+    padding: 25% 10% 0% 10%;
+}
+.bloque1us p{
+    color: rgb(80, 80, 86);
     font-size: 25px;
     padding: 0% 10% 30% 10%;
 }
