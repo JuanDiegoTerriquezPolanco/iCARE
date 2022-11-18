@@ -112,6 +112,23 @@ sr.reveal('.imgBloque3', {
     distance: '-200px',
     //reset: true
 });
+
+//-----------------CVC------------------------------------------------------
+sr.reveal('.textBloqueCVC', {
+    duration: 2000,
+    origin: 'left',
+    distance: '-200px',
+    //reset: true
+});
+sr.reveal('.imgBloqueCVC', {
+    delay: 700,
+    duration: 2000,
+    origin: 'right',
+    distance: '-200px',
+    //reset: true
+});
+//-----------------CVC------------------------------------------------------
+
 //-----------------cards-----------------
 sr.reveal('.titleAllCards', {
     duration: 2000,
