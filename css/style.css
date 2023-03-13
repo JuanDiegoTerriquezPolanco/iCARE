@@ -335,7 +335,47 @@
 .itemNavCrudSelect .iconNavCrud{
     color: #06d6a0 !important;
 }
-/* <------------INICIO------------> */
+/* <------------TOP------------> */
 .topCrud{
     padding-top: 2%;
+}
+.userTop{
+    border: #c9ced4 1px solid;
+    padding: 5px;
+    min-height: 40px;
+    display: table;
+}
+.userTop i{
+    font-size: 150%;
+    color: white;
+    background-color: #06d6a0;
+    width: 40px !important;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userTop p{
+    display: table-cell;
+    padding-top: 2%;
+}
+/* <------------TOP------------> */
+.bodyCrud{
+    border: #c9ced4 2px solid;
+    background-color: #F7F7FF;
+    height: 85%;
+}
+.cardCrud{
+    padding: 10px;
+}
+.addFile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    opacity: .5 !important;
+    border: #a5a5a7 2px solid !important;
+}
+.addFile i{
+    font-size: 500%;
 }

@@ -20,7 +20,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 h-100 min-vh-100" style="background-color: #464259;">
+        <div class="col-2 h-100 min-vh-100 fixed-top" style="background-color: #464259;">
             <div class="iconCrud">
                 <img class="w-75" src="./img/Logo_iCare_Work.gif" alt="icono de infansycare">
             </div>
@@ -39,27 +39,137 @@
                 </ul>
             </div>
         </div>
-        <div class="col-10">
+        <div class="col-10" style="margin-left: 16.6%;">
             <div class="container-fluid topCrud">
-                <div class="row">
-                    <div class="col-10 mb-3">
-                      <div class="input-group mb-3">
+                <div class="row mb-5">
+                    <div class="col-8">
+                      <div class="input-group">
                         <input type="text" class="form-control"  placeholder="Ingresa lo que quieres buscar">
                         <div class="input-group-append">
                           <button class="btn btn-primary btn-lg" type="button"><i class="fas fa-search"></i></button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-2">
-                        <div class="bg-primary">
-                          <i class="fa-sharp fa-solid fa-user"></i>
-                        </div>
+                    <div class="col-3 offset-md-1">
+                      <div class="row userTop">
+                        <i class="col-3 fa-sharp fa-solid fa-user"></i>
+                        <p class="h5 col-9">Veronica Guzman</p>
+                      </div>
                     </div>
                 </div>
+            </div>
+            <div class="bodyCrud">
+              <!-- ////////////CARDS//////////// -->
+              <div class="container-fluid bloqueCrud mb-3">
+                <h3 class="text-center text-uppercase titleAllCards" style="font-weight: bold; font-size: 46px">Noticias Recientes</h3>
+                <hr />
+                  <div class="card-deck" style="margin-top: 50px">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card1">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card2">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
+                        <div class="card addFile">
+                          <i class="fa-sharp fa-solid fa-folder-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div><!-- ////////////CARDS//////////// -->
+              <div class="container-fluid bloqueCrud">
+                <h3 class="text-center text-uppercase titleAllCards" style="font-weight: bold; font-size: 46px">Noticias Recientes</h3>
+                <hr />
+                  <div class="card-deck" style="margin-top: 50px">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card1">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card2">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
+                        <div class="card">
+                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div>
+                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
+                        <div class="card addFile">
+                          <i class="fa-sharp fa-solid fa-folder-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
             </div>
         </div>
     </div>
 </div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
