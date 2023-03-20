@@ -266,7 +266,7 @@
 .bloque4{
     margin: 0px 0px 200px 0px;
 }
-.card{
+.cardMove{
     text-align: left;
     transition: all .4s;
 }
@@ -280,8 +280,8 @@
 .card-text{
     color: gray;
 }
-.card:hover{
-    transform: scale(1.15);
+.cardMove:hover{
+    transform: scale(1.1);
 }
 /* /====================================================|ACERCA-DE|===============================================/ */
 .iconValues{
@@ -295,6 +295,10 @@
     align-items: center;
     justify-content: center;
     min-height: 120px;
+}
+.iconCrud img{
+    margin-top: 10px;
+    width: 100%;
 }
 .itemNavCrud{
     padding: 5px;
@@ -336,6 +340,9 @@
     color: #06d6a0 !important;
 }
 /* <------------TOP------------> */
+.allCrudBody{
+    margin-left: 16.6%
+}
 .topCrud{
     padding-top: 2%;
 }
@@ -343,7 +350,8 @@
     border: #c9ced4 1px solid;
     padding: 5px;
     min-height: 40px;
-    display: table;
+    display: flex;
+    align-items: center;
 }
 .userTop i{
     font-size: 150%;
@@ -357,13 +365,14 @@
 }
 .userTop p{
     display: table-cell;
-    padding-top: 2%;
+    padding: 2% 0% 0% 2%;
 }
-/* <------------TOP------------> */
+/* <------------BODY------------> */
 .bodyCrud{
     border: #c9ced4 2px solid;
     background-color: #F7F7FF;
-    height: 85%;
+    padding: 2rem 0rem 1.5rem 0rem;
+    margin: 10px;
 }
 .cardCrud{
     padding: 10px;
@@ -378,4 +387,37 @@
 }
 .addFile i{
     font-size: 500%;
+}
+.cardCrudMove{
+    transition: all .4s;
+}
+.cardCrudMove:hover{
+    transform: scale(1.02);
+}
+@media (max-width: 1200px) {
+    .textNavCrud{
+        display: none;
+    }
+    .allCrudBody{
+        margin-left: 8%;
+    }
+    .itemNavCrud{
+        padding: 0;
+    }
+    .itemNavCrudSelect{
+        padding: 0;
+    }
+}
+@media (max-width: 992px) {
+    .navBarCrud{
+        display: none;
+    }
+    .allCrudBody{
+        margin-left: 0%;
+    }
+}
+@media (max-width: 580px) {
+    .userTop p{
+        display: none;
+    }
 }

@@ -20,11 +20,11 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 h-100 min-vh-100 fixed-top" style="background-color: #464259;">
+        <div class="col-xl-2 col-lg-1 h-100 min-vh-100 fixed-top navBarCrud" style="background-color: #464259;">
             <div class="iconCrud">
-                <img class="w-75" src="./img/Logo_iCare_Work.gif" alt="icono de infansycare">
+                <img src="./img/Logo_iCare_Work.gif" alt="icono de infansycare">
             </div>
-            <hr style="border: #88989b 1px solid;">
+            <hr style="border: #88989b 1px solid;margin: 10px 0px 33px 0px;">
             <div class="">
                 <ul class="navbar-nav">
                   <li class="itemNavCrudSelect">
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-10" style="margin-left: 16.6%;">
+        <div class="col-xl-10 col-lg-11 col-md-12 allCrudBody">
             <div class="container-fluid topCrud">
                 <div class="row mb-5">
                     <div class="col-8">
@@ -50,10 +50,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3 offset-md-1">
+                    <div class="col-xl-3 col-md-4 col-4 offset-xl-1">
                       <div class="row userTop">
                         <i class="col-3 fa-sharp fa-solid fa-user"></i>
-                        <p class="h5 col-9">Veronica Guzman</p>
+                        <p class="h5 col-9">Admin</p>
                       </div>
                     </div>
                 </div>
@@ -63,113 +63,168 @@
               <div class="container-fluid bloqueCrud mb-3">
                 <h3 class="text-center text-uppercase titleAllCards" style="font-weight: bold; font-size: 46px">Noticias Recientes</h3>
                 <hr />
-                  <div class="card-deck" style="margin-top: 50px">
+                  <div class="card-deck mb-4" style="margin-top: 20px">
                     <div class="row">
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card1">
-                        <div class="card">
+                      <div class="col-xl-3 col-md-6 col-sm-12 card1" style="z-index: 4;">
+                        <div class="card cardCrudMove">
                           <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="row justify-content-center">
+                              <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                              <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                              <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                                <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card2">
-                        <div class="card">
+                      <div class="col-xl-3 col-md-6 col-sm-12 card2" style="z-index: 3;">
+                        <div class="card cardCrudMove">
                           <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="row justify-content-center">
+                              <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                              <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                              <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                                <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
-                        <div class="card">
+                      <div class="col-xl-3 col-md-6 col-sm-12 card3" style="z-index: 2;">
+                        <div class="card cardCrudMove">
                           <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="row justify-content-center">
+                              <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                              <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                              <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                                <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
-                        <div class="card addFile">
-                          <i class="fa-sharp fa-solid fa-folder-plus"></i>
+                      <div class="col-xl-3 col-md-6 col-sm-12 text-center card3" style="z-index: 1;">
+                        <div class="card cardCrudMove addFile">
+                          <i class="fa-sharp fa-solid fa-folder-plus mb-2"></i>
+                          <p class="text-uppercase">Añadir nueva noticia</p>
                         </div>
                       </div>
                     </div>
                   </div>
               </div><!-- ////////////CARDS//////////// -->
               <div class="container-fluid bloqueCrud">
-                <h3 class="text-center text-uppercase titleAllCards" style="font-weight: bold; font-size: 46px">Noticias Recientes</h3>
+                <h3 class="text-center text-uppercase titleAllCards" style="font-weight: bold; font-size: 46px">Productos Recientes</h3>
                 <hr />
-                  <div class="card-deck" style="margin-top: 50px">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card1">
-                        <div class="card">
-                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                <div class="card-deck" style="margin-top: 20px">
+                  <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-12" style="z-index: 3;">
+                      <div class="card cardCrudMove">
+                        <img class="card-img-top" src="./img/card2.jpg  " alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row justify-content-center">
+                            <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                            <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                              <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card2">
-                        <div class="card">
-                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
-                        <div class="card">
-                          <img class="card-img-top" src="./img/card1.jpg  " alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div>
-                              <button class="col-8 btn btn-primary btn-lg" style="margin-right: 10px;" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                              <button class="col-3 btn btn-danger btn-lg" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-xs-12 text-center card3">
-                        <div class="card addFile">
-                          <i class="fa-sharp fa-solid fa-folder-plus"></i>
                         </div>
                       </div>
                     </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12" style="z-index: 2;">
+                      <div class="card cardCrudMove">
+                        <img class="card-img-top" src="./img/card2.jpg  " alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row justify-content-center">
+                            <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                            <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                              <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12" style="z-index: 1;">
+                      <div class="card cardCrudMove">
+                        <img class="card-img-top" src="./img/card2.jpg  " alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row justify-content-center">
+                            <button class="col-6 btn btn-primary" style="margin-right: 5px; font-size: 110%" type="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i> EDITAR</button>
+                            <button class="col-3 btn btn-danger text-white" style="margin-right: 5px; font-size: 130%" type="button"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                            <div class="col-2 btn-group dropup" style="padding: 0px !important;">
+                              <button class="btn btn-outline-light rounded-1" style="border: #343437 1px solid; color: #343437; font-size: 130%"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 text-center card3">
+                      <div class="card cardCrudMove addFile">
+                        <i class="fa-sharp fa-solid fa-folder-plus mb-2"></i>
+                        <p class="text-uppercase">Añadir nuevo producto</p>
+                      </div>
+                    </div>
                   </div>
-              </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+                </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
