@@ -176,12 +176,15 @@
     border-radius: 5px;
     background-color: #343a403e;
     transition: background .1s;
-    display: block;
+    display: none;
 }
 .btnLeft:hover{
     background-color: #343a40;
     cursor: pointer
 }
+.btnLeft:target {
+    display: block;
+  }
 .btnRight{
     right: 0%;
     bottom: 40%;
@@ -193,12 +196,15 @@
     border-radius: 5px;
     background-color: #343a403e;
     transition: background .1s;
-    display: block;
+    display: none;
 }
 .btnRight:hover{
     background-color: #343a40;
     cursor: pointer
 }
+.btnRight:target {
+    display: block;
+  }
 .carousel-caption,h5,p {
     color: black;
 }
