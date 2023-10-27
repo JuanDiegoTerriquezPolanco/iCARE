@@ -1,5 +1,6 @@
 *{
     font-family: "Founders Grotesk",Inter,helvetica,arial,sans-serif;
+    font-display: swap;
 }
 /* <------------LOGO-BAR------------> */
 .logos{
@@ -211,10 +212,15 @@
 }
 /* <------------BLOQUE-1------------> */
 .bloque1{
-    margin: 150px 0px 150px 0px;
+    margin: 2% 10% 15% 10%;
     text-align: center;
 }
-.bloque1 h1{
+.bloque1-i{
+    margin: 5% 0% 0% 0%;
+    text-align: center;
+}
+.bloque1-i h1{
+    text-align: center;
     font-weight: bold;
     color: rgb(80, 80, 86);
     font-size: 65px;
@@ -222,45 +228,70 @@
 }
 .bloque1 p{
     color: rgb(80, 80, 86);
-    font-size: 24.4px;
+    font-size: 28px;
+    line-height: 1.4em;
     margin-top: 50px;
 }
 /* <------------BLOQUE-2------------> */
 .bloque2{
     background-color: #F5F5F7;
+    padding: 0px !important;
 }
 .bloque2 img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .bloque2 h1{
     font-weight: bold;
     color: rgb(80, 80, 86);
     font-size: 65px;
-    padding: 25% 10% 0% 10%;
+    padding: 0% 10% 0% 10%;
 }
 .bloque2 p{
     color: rgb(80, 80, 86);
     font-size: 25px;
     padding: 0% 10% 0% 10%;
+    font-size: 28px;
+    line-height: 1.4em;
+}
+.textBloque2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 /* <------------BLOQUE-3------------> */
 .bloque3{
     margin: 0px 0px 150px 0px;
     background-color: #06d6a0;
+    padding: 0px !important;
 }
 .bloque3 img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .bloque3 h1{
     font-weight: bold;
     color: white;
     font-size: 65px;
-    padding: 25% 10% 0% 10%;
+    padding: 0% 10% 0% 10%;
 }
 .bloque3 p{
     color: rgba(255, 255, 255, 0.833);
     font-size: 25px;
-    padding: 0% 10% 30% 10%;
+    padding: 0% 10% 0% 10%;
+    font-size: 28px;
+    line-height: 1.4em;
+}
+.textBloque3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 /* <------------BLOQUE-CARD------------> */
 .bloque4{
@@ -271,7 +302,7 @@
     transition: all .4s;
 }
 .dateCard{
-    margin-left: 20px !important; 
+    margin: 5px 20px 10px 20px !important; 
     color: gray;
 }
 .card-title{
@@ -279,6 +310,10 @@
 }
 .card-text{
     color: gray;
+    font-size: 16px !important;
+}
+.card-body{
+    padding-top: 0px !important;
 }
 .cardMove:hover{
     transform: scale(1.1);
