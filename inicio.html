@@ -65,7 +65,10 @@
       id="carouselExampleIndicators"
       class="carousel slide"
       data-ride="carousel"
+      role="region"
+      aria-labelledby="carouselLabel"
     >
+    <h2 id="carouselLabel" class="sr-only">Carrusel de Noticias</h2>
       <ol class="carousel-indicators">
         <li
           data-target="#carouselExampleIndicators"
@@ -89,8 +92,8 @@
           <div class="carousel-caption d-none d-md-block"></div>
         </div>
       </div>
-      <i class="fas fa-angle-left btnLeft" href="#carouselExampleIndicators" role="button" data-slide="prev"></i>
-      <i class="fas fa-angle-right btnRight" href="#carouselExampleIndicators" role="button" data-slide="next"></i>
+      <i class="fas fa-angle-left btnLeft" href="#carouselExampleIndicators" role="button" aria-label="Anterior" data-slide="prev"></i>
+      <i class="fas fa-angle-right btnRight" href="#carouselExampleIndicators" role="button" aria-label="Siguiente" data-slide="next"></i>
     </div>
     <!-- ////////////BLOQUE-1//////////// -->
     <section>
