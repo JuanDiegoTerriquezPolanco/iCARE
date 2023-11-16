@@ -1,45 +1,48 @@
 //|=====================/SERCH-BAR|=====================|
-      $(document).ready(function(){
-        var submitIcon = $('.searchbar-icon');
-        var inputBox = $('.searchbar-input');
-        var searchbar = $('.searchbar');
-        var isOpen = false;
-        submitIcon.click(function(){
-            if(isOpen == false){
-                searchbar.addClass('searchbar-open');
-                $('.floatBar').css('width','325px');
-                inputBox.focus();
-                isOpen = true;
-            } else {
-                searchbar.removeClass('searchbar-open');
-                $('.floatBar').css('width','50px');
-                inputBox.focusout();
-                isOpen = false;
-            }
-        });  
-         submitIcon.mouseup(function(){
-                return false;
-            });
-        searchbar.mouseup(function(){
-                return false;
-            });
-        $(document).mouseup(function(){
-                if(isOpen == true){
-                    $('.searchbar-icon').css('display','block');
-                    submitIcon.click();
-                }
-            });
+$(document).ready(function () {
+    var submitIcon = $('.searchbar-icon');
+    var inputBox = $('.searchbar-input');
+    var searchbar = $('.searchbar');
+    var isOpen = false;
+  
+    // Cuando el campo de búsqueda obtiene el enfoque
+    inputBox.focus(function () {
+      if (isOpen == false) {
+        searchbar.addClass('searchbar-open');
+        $('.floatBar').css('width', '325px');
+        submitIcon.css('display', 'none'); // Oculta el ícono de búsqueda
+        isOpen = true;
+      }
     });
-        function buttonUp(){
-            var inputVal = $('.searchbar-input').val();
-            inputVal = $.trim(inputVal).length;
-            if( inputVal !== 0){
-                $('.searchbar-icon').css('display','none');
-            } else {
-                $('.searchbar-input').val('');
-                $('.searchbar-icon').css('display','block');
-            }
-        }
+  
+    // Cuando se hace clic en el ícono de búsqueda
+    submitIcon.click(function () {
+      if (isOpen == false) {
+        searchbar.addClass('searchbar-open');
+        $('.floatBar').css('width', '325px');
+        inputBox.focus();
+        isOpen = true;
+      } else {
+        searchbar.removeClass('searchbar-open');
+        $('.floatBar').css('width', '50px');
+        inputBox.focusout();
+        isOpen = false;
+      }
+    });
+  
+    // Otros manejadores de eventos...
+  
+    function buttonUp() {
+      var inputVal = $('.searchbar-input').val();
+      inputVal = $.trim(inputVal).length;
+      if (inputVal !== 0) {
+        $('.searchbar-icon').css('display', 'none');
+      } else {
+        $('.searchbar-input').val('');
+        $('.searchbar-icon').css('display', 'block');
+      }
+    }
+  });  
 //|=====================/SERCH-BAR-MARGIN|=====================|
 /*$(window).resize(function(){
 var space = $(window).width();
