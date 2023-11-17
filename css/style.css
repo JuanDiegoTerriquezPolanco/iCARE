@@ -33,19 +33,19 @@
     font-size: 15px;
     margin: 0px 10px 0px 10px !important;
     padding: 10px 50px 10px 50px !important;
-    border-bottom: #06d6a0 0px solid;
-    color: #0aad81 !important;
+    border-bottom: #047e5d 0px solid;
+    color: #047e5d !important;
     transition: border-bottom .2s;
 }
 .disabled{
-    border-bottom: #06d6a0 4px solid;
-    color: #06d6a0 !important;
+    border-bottom: #048767 4px solid;
+    color: #048767!important;
     font-weight: bold;
 }
 .nav-link:hover{
-    border-bottom: #06d6a0 4px solid;
+    border-bottom: #048767  4px solid;
     font-weight: bold;
-    color: #06d6a0 !important;
+    color: #048767 !important;
 }
 @media (max-width: 1300px) {
     .nav-link{
@@ -135,18 +135,18 @@
     line-height:35px;
     text-align:center;
     cursor:pointer;
-    border: #06d6a0 2px solid;
-    color:#06d6a0;
+    border: #047e5d 2px solid;
+    color:#047e5d;
     background:white ;
     transition: background .1s;
 }
 .searchbar-icon:hover{
-    background-color: #06d6a0 !important;
-    border: #06d6a0 1px solid !important;
+    background-color: #048767 !important;
+    border: #048767 1px solid !important;
     color: white;
 }
 .searchbar-icon:focus{
-    background: #06d6a0;
+    background: #048767;
 }
 .searchbar-open{
     width:100%;
@@ -162,7 +162,7 @@
 /* /====================================================|INICIO|===============================================/ */
 /* <------------CAROUSEL------------> */
 .carousel{
-    width: 100%;
+    width: 100% !important;
     height: 100% !important;
 }
 .btnLeft{
@@ -229,12 +229,12 @@
     text-align: center;
     font-weight: bold;
     color: rgb(80, 80, 86);
-    font-size: 65px;
+    font-size: 400%;
     margin-bottom: 50px;
 }
 .bloque1 p{
     color: rgb(80, 80, 86);
-    font-size: 28px;
+    font-size: 190%;
     line-height: 1.4em;
     margin-top: 50px;
 }
@@ -251,14 +251,14 @@
 .bloque2 h1{
     font-weight: bold;
     color: rgb(80, 80, 86);
-    font-size: 65px;
+    font-size: 400%;
     padding: 0% 10% 0% 10%;
 }
 .bloque2 p{
     color: rgb(80, 80, 86);
     font-size: 25px;
     padding: 0% 10% 0% 10%;
-    font-size: 28px;
+    font-size: 190%;
     line-height: 1.4em;
 }
 .textBloque2{
@@ -271,7 +271,7 @@
 /* <------------BLOQUE-3------------> */
 .bloque3{
     margin: 0px 0px 150px 0px;
-    background-color: #06d6a0;
+    background-color: #027F5E;
     padding: 0px !important;
 }
 .bloque3 img{
@@ -282,14 +282,14 @@
 .bloque3 h1{
     font-weight: bold;
     color: white;
-    font-size: 65px;
+    font-size: 400%;
     padding: 0% 10% 0% 10%;
 }
 .bloque3 p{
     color: rgba(255, 255, 255, 0.833);
     font-size: 25px;
     padding: 0% 10% 0% 10%;
-    font-size: 28px;
+    font-size: 190%;
     line-height: 1.4em;
 }
 .textBloque3{
@@ -316,7 +316,7 @@
 }
 .card-text{
     color: gray;
-    font-size: 16px !important;
+    font-size: 100% !important;
 }
 .card-body{
     padding-top: 0px !important;
@@ -328,6 +328,36 @@
 .iconValues{
     color: #06d6a0 !important;
     font-size: 500%;
+}
+/* /====================================================|RECURSOS|===============================================/ */
+.select_rec h1{
+    font-weight: bold;
+    font-size: 300%;
+}
+.select_rec p{
+    font-size: 130%;
+}
+.titulo_rec{
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    margin-bottom: 50px;
+}
+.titulo2_rec{
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.bloc_rec{
+    margin: 0% 10% 0% 10%;
+}
+.video_rec{
+    margin: 0% 20% 0% 20%;
+}
+.object-fit-cover {
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
 }
 /* /====================================================|CRUD|===============================================/ */
 /* <------------NAVBAR------------> */

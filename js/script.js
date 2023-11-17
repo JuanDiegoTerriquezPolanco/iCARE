@@ -14,6 +14,16 @@ $(document).ready(function () {
         isOpen = true;
       }
     });
+
+    // Cuando el campo de búsqueda pierde el enfoque
+    inputBox.blur(function () {
+    if (isOpen == true) {
+      searchbar.removeClass('searchbar-open');
+      $('.floatBar').css('width', '50px');
+      submitIcon.css('display', 'block'); // Muestra el ícono de búsqueda
+      isOpen = false;
+    }
+  });
   
     // Cuando se hace clic en el ícono de búsqueda
     submitIcon.click(function () {
