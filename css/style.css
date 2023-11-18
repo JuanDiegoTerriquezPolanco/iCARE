@@ -313,6 +313,8 @@
 }
 .card-title{
     font-weight: bold;
+    font-size: 120%;
+    color: black;
 }
 .card-text{
     color: gray;
