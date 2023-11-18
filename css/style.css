@@ -303,6 +303,9 @@
 .sin_deco{
     text-decoration: none;
 }
+.sin_deco:hover{
+    text-decoration: none;
+}
 .bloque4{
     margin: 0px 0px 200px 0px;
 }
@@ -355,6 +358,9 @@
 }
 .bloc_rec{
     margin: 0% 10% 0% 10%;
+}
+.bloc_rec .card{
+    margin-left: 5%;
 }
 .video_rec{
     margin: 0% 20% 0% 20%;
