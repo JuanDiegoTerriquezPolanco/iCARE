@@ -300,6 +300,9 @@
     height: 100vh;
 }
 /* <------------BLOQUE-CARD------------> */
+.sin_deco{
+    text-decoration: none;
+}
 .bloque4{
     margin: 0px 0px 200px 0px;
 }
@@ -309,7 +312,7 @@
 }
 .dateCard{
     margin: 5px 20px 10px 20px !important; 
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 .card-title{
     font-weight: bold;
